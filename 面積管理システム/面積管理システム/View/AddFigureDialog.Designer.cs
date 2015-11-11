@@ -120,8 +120,6 @@
             this.Controls.Add(this.btnOK);
             this.Name = "AddFigureDialog";
             this.Text = "図形追加";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddFigureDialog_KeyDown);
-            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.AddFigureDialog_PreviewKeyDown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

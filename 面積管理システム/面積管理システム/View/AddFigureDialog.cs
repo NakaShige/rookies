@@ -23,29 +23,5 @@ namespace 面積管理システム.View
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
-
-        private void AddFigureDialog_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-                case Keys.Escape:
-                    this.Close();
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        private void AddFigureDialog_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-                case Keys.Escape:
-                    this.Close();
-                    break;
-                default:
-                    break;
-            }
-        }
     }
 }
