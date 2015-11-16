@@ -17,7 +17,9 @@ namespace 面積管理システム
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            AppController.Run(args);
+
+            var appCtrl = new AppController();
+            appCtrl.Run(args);
         }
     }
 }

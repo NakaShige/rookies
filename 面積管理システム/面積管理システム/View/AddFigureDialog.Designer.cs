@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnOK = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbnSquare = new System.Windows.Forms.RadioButton();
+            this.rbnTriangle = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLength = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -49,32 +49,32 @@
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // radioButton1
+            // rbnSquare
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 28);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 16);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "四角形";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbnSquare.AutoSize = true;
+            this.rbnSquare.Location = new System.Drawing.Point(6, 28);
+            this.rbnSquare.Name = "rbnSquare";
+            this.rbnSquare.Size = new System.Drawing.Size(59, 16);
+            this.rbnSquare.TabIndex = 1;
+            this.rbnSquare.TabStop = true;
+            this.rbnSquare.Text = "四角形";
+            this.rbnSquare.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbnTriangle
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(121, 28);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 16);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "三角形";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbnTriangle.AutoSize = true;
+            this.rbnTriangle.Location = new System.Drawing.Point(121, 28);
+            this.rbnTriangle.Name = "rbnTriangle";
+            this.rbnTriangle.Size = new System.Drawing.Size(59, 16);
+            this.rbnTriangle.TabIndex = 2;
+            this.rbnTriangle.TabStop = true;
+            this.rbnTriangle.Text = "三角形";
+            this.rbnTriangle.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.rbnSquare);
+            this.groupBox1.Controls.Add(this.rbnTriangle);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(227, 68);
@@ -91,12 +91,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "一辺の長さ";
             // 
-            // textBox1
+            // txtLength
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 19);
-            this.textBox1.TabIndex = 5;
+            this.txtLength.Location = new System.Drawing.Point(83, 93);
+            this.txtLength.Name = "txtLength";
+            this.txtLength.Size = new System.Drawing.Size(155, 19);
+            this.txtLength.TabIndex = 5;
             // 
             // btnCancel
             // 
@@ -114,7 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(256, 180);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtLength);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOK);
@@ -130,11 +130,11 @@
         #endregion
 
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbnSquare;
+        private System.Windows.Forms.RadioButton rbnTriangle;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLength;
         private System.Windows.Forms.Button btnCancel;
     }
 }

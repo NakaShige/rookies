@@ -28,50 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.btnAddFigure = new System.Windows.Forms.Button();
-            this.btnDeleteFigure = new System.Windows.Forms.Button();
+            this.lvwFigure = new System.Windows.Forms.ListView();
             this.図形名称 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Area = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnAddFigure = new System.Windows.Forms.Button();
+            this.btnDeleteFigure = new System.Windows.Forms.Button();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listView1
+            // lvwFigure
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lvwFigure.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvwFigure.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.図形名称,
             this.Area});
-            this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(268, 252);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // btnAddFigure
-            // 
-            this.btnAddFigure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddFigure.Location = new System.Drawing.Point(286, 12);
-            this.btnAddFigure.Name = "btnAddFigure";
-            this.btnAddFigure.Size = new System.Drawing.Size(104, 41);
-            this.btnAddFigure.TabIndex = 1;
-            this.btnAddFigure.Text = "追加";
-            this.btnAddFigure.UseVisualStyleBackColor = true;
-            this.btnAddFigure.Click += new System.EventHandler(this.btnAddFigure_Click);
-            // 
-            // btnDeleteFigure
-            // 
-            this.btnDeleteFigure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteFigure.Location = new System.Drawing.Point(286, 59);
-            this.btnDeleteFigure.Name = "btnDeleteFigure";
-            this.btnDeleteFigure.Size = new System.Drawing.Size(104, 41);
-            this.btnDeleteFigure.TabIndex = 2;
-            this.btnDeleteFigure.Text = "削除";
-            this.btnDeleteFigure.UseVisualStyleBackColor = true;
+            this.lvwFigure.FullRowSelect = true;
+            this.lvwFigure.Location = new System.Drawing.Point(12, 12);
+            this.lvwFigure.MultiSelect = false;
+            this.lvwFigure.Name = "lvwFigure";
+            this.lvwFigure.Size = new System.Drawing.Size(268, 252);
+            this.lvwFigure.TabIndex = 0;
+            this.lvwFigure.UseCompatibleStateImageBehavior = false;
+            this.lvwFigure.View = System.Windows.Forms.View.Details;
+            this.lvwFigure.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lvwFigure_ItemSelectionChanged);
             // 
             // 図形名称
             // 
@@ -83,27 +64,62 @@
             this.Area.Text = "面積(㎡)";
             this.Area.Width = 120;
             // 
+            // btnAddFigure
+            // 
+            this.btnAddFigure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddFigure.Location = new System.Drawing.Point(286, 56);
+            this.btnAddFigure.Name = "btnAddFigure";
+            this.btnAddFigure.Size = new System.Drawing.Size(104, 41);
+            this.btnAddFigure.TabIndex = 1;
+            this.btnAddFigure.Text = "追加";
+            this.btnAddFigure.UseVisualStyleBackColor = true;
+            this.btnAddFigure.Click += new System.EventHandler(this.btnAddFigure_Click);
+            // 
+            // btnDeleteFigure
+            // 
+            this.btnDeleteFigure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteFigure.Location = new System.Drawing.Point(286, 103);
+            this.btnDeleteFigure.Name = "btnDeleteFigure";
+            this.btnDeleteFigure.Size = new System.Drawing.Size(104, 41);
+            this.btnDeleteFigure.TabIndex = 2;
+            this.btnDeleteFigure.Text = "削除";
+            this.btnDeleteFigure.UseVisualStyleBackColor = true;
+            this.btnDeleteFigure.Click += new System.EventHandler(this.btnDeleteFigure_Click);
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(284, 31);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(41, 12);
+            this.lblTotal.TabIndex = 3;
+            this.lblTotal.Text = "Total : ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(397, 276);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnDeleteFigure);
             this.Controls.Add(this.btnAddFigure);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvwFigure);
             this.Name = "Form1";
             this.Text = "面積管理システム";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvwFigure;
         private System.Windows.Forms.Button btnAddFigure;
         private System.Windows.Forms.ColumnHeader 図形名称;
         private System.Windows.Forms.ColumnHeader Area;
         private System.Windows.Forms.Button btnDeleteFigure;
+        private System.Windows.Forms.Label lblTotal;
     }
 }
 
