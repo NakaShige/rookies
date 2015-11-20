@@ -118,6 +118,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOK);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "AddFigureDialog";
             this.Text = "図形追加";
             this.groupBox1.ResumeLayout(false);

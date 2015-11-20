@@ -7,7 +7,7 @@ using 面積管理システム.Model;
 
 namespace 面積管理システム.View.Commands
 {
-    public enum CommandType
+    public enum 面積管理システムCommandType
     {
         Add,
         Delete,
@@ -15,12 +15,12 @@ namespace 面積管理システム.View.Commands
 
     public static class CommandManager
     {
-        public static bool CanExecute(CommandType cmdType)
+        public static bool CanExecute(面積管理システムCommandType cmdType)
         {
             return GetCommand(cmdType).CanExecute;
         }
 
-        public static bool Execute(CommandType cmdType)
+        public static bool Execute(面積管理システムCommandType cmdType)
         {
             ICommand command = GetCommand(cmdType);
             if (command.CanExecute)
@@ -29,13 +29,13 @@ namespace 面積管理システム.View.Commands
             return false;
         }
 
-        private static ICommand GetCommand(CommandType cmdType)
+        private static ICommand GetCommand(面積管理システムCommandType cmdType)
         {
             switch (cmdType)
             {
-                case CommandType.Add:
+                case 面積管理システムCommandType.Add:
                     return new AddCommand();
-                case CommandType.Delete:
+                case 面積管理システムCommandType.Delete:
                     return new DeleteCommand();
                 default:
                     throw new NotImplementedException();

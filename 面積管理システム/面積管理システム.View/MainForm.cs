@@ -24,12 +24,12 @@ namespace 面積管理システム.View
 
         private void btnAddFigure_Click(object sender, EventArgs e)
         {
-            CommandManager.Execute(Commands.CommandType.Add);
+            CommandManager.Execute(Commands.面積管理システムCommandType.Add);
         }
 
         private void btnDeleteFigure_Click(object sender, EventArgs e)
         {
-            CommandManager.Execute(Commands.CommandType.Delete);
+            CommandManager.Execute(Commands.面積管理システムCommandType.Delete);
         }
 
         private void lvwFigure_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
@@ -66,8 +66,8 @@ namespace 面積管理システム.View
 
         private void UpdateCommandButton()
         {
-            btnAddFigure.Enabled = CommandManager.CanExecute(Commands.CommandType.Add);
-            btnDeleteFigure.Enabled = CommandManager.CanExecute(Commands.CommandType.Delete);
+            btnAddFigure.Enabled = CommandManager.CanExecute(Commands.面積管理システムCommandType.Add);
+            btnDeleteFigure.Enabled = CommandManager.CanExecute(Commands.面積管理システムCommandType.Delete);
         }
     }
 }

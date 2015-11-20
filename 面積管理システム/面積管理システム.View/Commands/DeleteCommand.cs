@@ -11,10 +11,7 @@ namespace 面積管理システム.View.Commands
     {
         public bool CanExecute
         {
-            get
-            {
-                return Global.図形一覧.IsSelected;
-            }
+            get { return Global.図形一覧.IsSelected; }
         }
 
         public bool Execute()
