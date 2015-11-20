@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "面積管理システム", "面積管理システム\面積管理システム.csproj", "{DD272C44-4FFA-4AA3-B82F-2FE627D6C759}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "面積管理システム.View", "面積管理システム.View\面積管理システム.View.csproj", "{0BF493CB-B653-4183-89EB-2961143B18DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "面積管理システム.Controller", "面積管理システム.Controller\面積管理システム.Controller.csproj", "{E82BC62A-0B00-4BD9-85DE-2A69A1BF0C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test面積管理システム.Model", "Test面積管理システム.Model\Test面積管理システム.Model.csproj", "{BB77DE15-E552-4FD8-9CC1-2267D4BF8866}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E82BC62A-0B00-4BD9-85DE-2A69A1BF0C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E82BC62A-0B00-4BD9-85DE-2A69A1BF0C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E82BC62A-0B00-4BD9-85DE-2A69A1BF0C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB77DE15-E552-4FD8-9CC1-2267D4BF8866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB77DE15-E552-4FD8-9CC1-2267D4BF8866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB77DE15-E552-4FD8-9CC1-2267D4BF8866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB77DE15-E552-4FD8-9CC1-2267D4BF8866}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
