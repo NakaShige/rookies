@@ -11,6 +11,8 @@ namespace 面積管理システム.Model.図形
         public 三角形(double d辺の長さ)
         {
             this.辺の長さ = d辺の長さ;
+            if (this.辺の長さ < 0.0)
+                this.辺の長さ = 0.0;
         }
 
         public string Name { get { return "三角形"; } }
