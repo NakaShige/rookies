@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using 面積管理システム.Model;
+using 面積管理システム.Model.図形;
 
 namespace 面積管理システム.View
 {

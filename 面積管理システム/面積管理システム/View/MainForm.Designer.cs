@@ -1,6 +1,6 @@
 ﻿namespace 面積管理システム.View
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// 必要なデザイナー変数です。

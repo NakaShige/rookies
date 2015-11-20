@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 面積管理システム.Model
+namespace 面積管理システム.Model.図形
 {
     public delegate void ChangedDataEvent();
 
-    public class DataManager
+    public class 図形一覧
     {
         public void Add(I図形 fig)
         {
@@ -51,7 +51,13 @@ namespace 面積管理システム.Model
         public I図形 SelectedItem
         {
             get { return m_SelectedItem; }
-            set { m_SelectedItem = value; }
+            set
+            {
+                if (m_SelectedItem != value)
+                {
+                    m_SelectedItem = value;
+                }
+            }
         }
 
         public bool IsSelected

@@ -46,10 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\AppController.cs" />
-    <Compile Include="Controller\Commands\AddCommand.cs" />
-    <Compile Include="Controller\Commands\ICommand.cs" />
-    <Compile Include="Controller\Commands\ICommandImplement.cs" />
-    <Compile Include="Model\DataManager.cs" />
+    <Compile Include="Model\図形\図形一覧.cs" />
     <Compile Include="Model\Global.cs" />
     <Compile Include="View\AddFigureDialog.cs">
       <SubType>Form</SubType>
@@ -57,22 +54,26 @@
     <Compile Include="View\AddFigureDialog.Designer.cs">
       <DependentUpon>AddFigureDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form1.cs">
+    <Compile Include="View\Commands\AddCommand.cs" />
+    <Compile Include="View\Commands\CommandManager.cs" />
+    <Compile Include="View\Commands\DeleteCommand.cs" />
+    <Compile Include="View\Commands\ICommand.cs" />
+    <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\I図形.cs" />
-    <Compile Include="Model\三角形.cs" />
-    <Compile Include="Model\四角形.cs" />
+    <Compile Include="Model\図形\I図形.cs" />
+    <Compile Include="Model\図形\三角形.cs" />
+    <Compile Include="Model\図形\四角形.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\AddFigureDialog.resx">
       <DependentUpon>AddFigureDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

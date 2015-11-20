@@ -13,7 +13,7 @@ namespace 面積管理システム.Controller
     {
         public void Run(string[] args)
         {
-            Global.DataManager.OnChangedData += m_DataManager_OnChangedData;
+            Global.図形一覧.OnChangedData += m_DataManager_OnChangedData;
 
             Application.Run(m_MainForm);
         }
@@ -23,6 +23,6 @@ namespace 面積管理システム.Controller
             m_MainForm.UI更新();
         }
 
-        private Form1 m_MainForm = new Form1();
+        private MainForm m_MainForm = new MainForm();
     }
 }

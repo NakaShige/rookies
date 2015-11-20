@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 面積管理システム.Model
+namespace 面積管理システム.Model.図形
 {
     public interface I図形
     {

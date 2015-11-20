@@ -43,7 +43,7 @@
             this.btnOK.Location = new System.Drawing.Point(12, 125);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(100, 39);
-            this.btnOK.TabIndex = 0;
+            this.btnOK.TabIndex = 6;
             this.btnOK.Tag = "OK";
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -52,6 +52,7 @@
             // rbnSquare
             // 
             this.rbnSquare.AutoSize = true;
+            this.rbnSquare.Checked = true;
             this.rbnSquare.Location = new System.Drawing.Point(6, 28);
             this.rbnSquare.Name = "rbnSquare";
             this.rbnSquare.Size = new System.Drawing.Size(59, 16);
@@ -67,7 +68,6 @@
             this.rbnTriangle.Name = "rbnTriangle";
             this.rbnTriangle.Size = new System.Drawing.Size(59, 16);
             this.rbnTriangle.TabIndex = 2;
-            this.rbnTriangle.TabStop = true;
             this.rbnTriangle.Text = "三角形";
             this.rbnTriangle.UseVisualStyleBackColor = true;
             // 
@@ -103,7 +103,7 @@
             this.btnCancel.Location = new System.Drawing.Point(133, 125);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 39);
-            this.btnCancel.TabIndex = 6;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Tag = "Cancel";
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
