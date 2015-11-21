@@ -18,6 +18,8 @@ namespace 面積管理システム.View
         public MainForm()
         {
             InitializeComponent();
+
+            UpdateCommandButton();
         }
 
         #region Event
