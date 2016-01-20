@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "販売管理システム", "販売管理システム\販売管理システム.csproj", "{022F365E-2B41-4FE4-BC5F-3282D5762ED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "販売管理システム.Model", "販売管理システム.Model\販売管理システム.Model.csproj", "{70A6A3FB-8CEE-4FB8-8D48-CDF8A2200FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "販売管理システム.View", "販売管理システム.View\販売管理システム.View.csproj", "{F7E23CE9-63B8-4AE7-ABC2-71CFA7EBA964}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{022F365E-2B41-4FE4-BC5F-3282D5762ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022F365E-2B41-4FE4-BC5F-3282D5762ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022F365E-2B41-4FE4-BC5F-3282D5762ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022F365E-2B41-4FE4-BC5F-3282D5762ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A6A3FB-8CEE-4FB8-8D48-CDF8A2200FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A6A3FB-8CEE-4FB8-8D48-CDF8A2200FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A6A3FB-8CEE-4FB8-8D48-CDF8A2200FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A6A3FB-8CEE-4FB8-8D48-CDF8A2200FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E23CE9-63B8-4AE7-ABC2-71CFA7EBA964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E23CE9-63B8-4AE7-ABC2-71CFA7EBA964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E23CE9-63B8-4AE7-ABC2-71CFA7EBA964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E23CE9-63B8-4AE7-ABC2-71CFA7EBA964}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
