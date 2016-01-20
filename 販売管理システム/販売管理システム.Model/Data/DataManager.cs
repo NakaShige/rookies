@@ -14,15 +14,22 @@ namespace 販売管理システム.Model.Data
         public 仕入[] 仕入List { get { return m_仕入List.ToArray(); } }
         public 商品[] 商品List { get { return m_商品List.ToArray(); } }
 
-        public void 商品登録(string newItemName)
+        public bool 商品登録(string newItemName)
         {
+            newItemName = newItemName.Trim();
+
+            if (string.IsNullOrEmpty(newItemName))
+                return false;
+
             if (m_商品List.Any(q => string.Compare(q.Name, newItemName, true) == 0))
-                return;
+                return false;
 
             m_商品List.Add(new 商品(newItemName));
 
             if (ChangedData != null)
                 ChangedData();
+
+            return true;
         }
 
         public void 仕入処理(商品 item, int 仕入, int 販売, int 個数, DateTime 仕入日)
@@ -49,13 +56,30 @@ namespace 販売管理システム.Model.Data
             if (item == null || 販売数 <= 0)
                 return;
 
+            if (販売数 > m_仕入List.Where(q => q.商品 == item).Sum(p => p.個数))
+                return;
+
             int 残り販売数 = 販売数;
             var query = m_仕入List.Where(q => q.商品 == item && q.個数 > 0).OrderBy(q => q.仕入日);
             foreach (var 仕入Item in query)
             {
                 int 在庫数 = 仕入Item.個数;
-                
-                残り販売数 -= 仕入Item.個数;
+
+                if (残り販売数 > 仕入Item.個数)
+                {
+                    残り販売数 -= 在庫数;
+                    仕入Item.個数 = 0;
+                }
+                else
+                {
+                    仕入Item.個数 -= 残り販売数;
+                    残り販売数 = 0;
+                }
+
+                if (残り販売数 <= 0)
+                    break;
+
+                //残り販売数 -= 仕入Item.個数;
             }
 
             if (ChangedData != null)

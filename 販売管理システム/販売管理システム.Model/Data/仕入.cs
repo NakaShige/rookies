@@ -22,7 +22,7 @@ namespace 販売管理システム.Model.Data
         public int 個数 { get; set; }
         public DateTime 仕入日 { get; private set; }
 
-        public string ToString()
+        public override string ToString()
         {
             return "商品:" + 商品.Name + ", 仕入:" + 仕入価格.ToString() + ", 販売:" + 販売価格.ToString() + ", 個数:" + 個数.ToString() + ", 仕入日:" + 仕入日.ToShortDateString();
         }

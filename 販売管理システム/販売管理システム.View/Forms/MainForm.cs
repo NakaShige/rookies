@@ -18,9 +18,6 @@ namespace 販売管理システム.View.Forms
             InitializeComponent();
 
             DataManager.getInstance().ChangedData += ChangedDataEvent;
-
-            // Test
-            Function();
         }
 
         private void ChangedDataEvent()
@@ -29,16 +26,16 @@ namespace 販売管理システム.View.Forms
             var mainVM = ViewModelManager.getInstance().GetMainFormVM();
         }
 
-        public void Function()
+        private void btn商品登録_Click(object sender, EventArgs e)
         {
-            var dataManager = DataManager.getInstance();
+            var dlg = new 商品登録Form();
+            dlg.ShowDialog();
+        }
 
-            dataManager.商品登録("AAA");
-            dataManager.商品登録("BBB");
-            dataManager.商品登録("aaa"); // 登録されない（既に「AAA」があるので）
-
-
-            dataManager.仕入処理(dataManager.商品List[0], 100, 200, 10, DateTime.Parse("2016/01/01"));
+        private void btn仕入処理_Click(object sender, EventArgs e)
+        {
+            var dlg = new 仕入処理Form();
+            dlg.ShowDialog();
         }
     }
 }
